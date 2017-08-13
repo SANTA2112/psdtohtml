@@ -1,0 +1,146 @@
+@import 'fonts.styl'
+*
+  margin: 0
+  padding: 0
+  box-sizing: border-box
+  outline: 0
+body
+  font-family: "Open Sans"
+header
+  display: flex
+  background-color: #fff
+  width: 100%
+  align-items: center
+.logo
+  margin: 0px 45px;
+.workout
+  border-bottom: 1px dashed #000
+  text-decoration: none
+  color: #000
+  font-size: 15px
+  margin 5px 45px
+  transition: .5s
+  &:hover
+    border-color: transparent
+.phone
+  font-size: 20px
+  text-transform: uppercase
+.logo-marathon
+  margin: 5px 0
+  margin-left: 245px
+.menu
+  width: 100%
+  background-color: #000
+  display: flex
+  justify-content: space-around
+  align-items: center
+  text-transform: uppercase
+  &__link
+    color: #fff
+    transition: .5s
+    font-size: 16px
+    text-decoration: none
+    position: relative
+    &:hover
+      color: #00bcd9
+    &_z
+      list-style-type: none
+      &:before
+        content: ""
+        position: absolute
+        top: -4px
+        right: calc(100% +6px)
+        display: inline-block
+        width: 15px;
+        height: 34px;
+        background-image url('/img/lightning.png')
+  &__item
+    list-style-type: none
+    padding: 10px 18px
+    color: #fff
+    &:hover
+      color: #00bcd9
+  &__facebook
+    margin: 0 8px 0 100px
+  &__insta
+    margin: 0 8px
+  &__youtube
+    margin: 0 8px
+  &__question
+    padding 15px
+    border-right: 1px solid #fff
+    border-left: 1px solid #fff
+  &__search
+    margin: 0 60px 0 16px
+
+.title
+  margin-top: 70px
+  font-size: 40px
+  font-weight: 600
+  text-transform: uppercase
+  text-align: center
+.sport-menu
+  margin-top 50px
+  width: 100%
+  display: flex
+  justify-content: center
+  align-items: center
+  &__link
+    color: #000
+    transition: .5s
+    font-size: 15px
+    text-decoration: none
+    position: relative
+    margin: 0 15px
+    &:hover
+      color: #00bcd9
+      border-bottom: 1px solid #00bcd9
+.half-marathon
+  margin-top 44px
+  display: flex
+  justify-content: space-around
+  flex-wrap: wrap
+  &__1
+    width: 100%
+    margin: 5px
+    background-image: url('/img/1.png')
+  &__2
+    margin: 5px
+    background-image: url('/img/2.png')
+  &__3
+    margin: 5px
+    background-image: url('/img/3.png')
+  &__4
+    margin: 5px
+    background-image: url('/img/4.png')
+  &__seemore
+    font-size: 18px
+    text-transform: uppercase
+    margin-top: 50px
+    position: relative
+    text-decoration: none
+    color: #000
+    margin-bottom: 66px
+    &:before
+      content: ""
+      background-image url('/img/circle.png')
+      width: 16px
+      height: 16px
+      position: absolute
+      top: 5px
+      right: 100%
+      display: inline-block
+      margin-right: 16px
+
+.studying-programs
+  margin-top: 66px
+  &__title
+    font-size: 40px
+    font-weight: 600
+    text-transform: uppercase
+    text-align: center
+    margin-bottom: 15px
+  &__description
+    font-size: 18px
+    text-align: center
+    margin: 0 156px
