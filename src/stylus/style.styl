@@ -89,4 +89,34 @@ body
     &:hover
       color: #00bcd9
       border-bottom: 1px solid #00bcd9
+.half-maraphon
+  display: flex
+  justify-content: space-around
+  flex-wrap: wrap
+  margin-top: 45px
+  &__img
+    padding: 5px
 
+.seemore
+  font-size: 18px
+  text-transform: uppercase
+  margin-top: 50px
+  position: relative
+  text-decoration: none
+  color: #000
+  margin-bottom: 66px
+  transition: .5s
+  border-color: transparent
+  &:before
+    content: ""
+    background-image url('/img/circle.png')
+    width: 16px
+    height: 16px
+    position: absolute
+    top: 5px
+    right: 100%
+    display: inline-block
+    margin-right: 16px
+  &:hover
+    color: #00bcd9
+    border-bottom: 1px solid #00bcd9
