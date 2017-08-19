@@ -94,29 +94,40 @@ body
   justify-content: space-around
   flex-wrap: wrap
   margin-top: 45px
-  &__img
-    padding: 5px
-.seemore
-  font-size: 18px
-  text-transform: uppercase
-  margin-top: 50px
-  position: relative
-  text-decoration: none
-  color: #000
-  margin-bottom: 66px
-  transition: .5s
-  &:before
-    content: ""
-    background-image url('/img/circle.png')
-    width: 16px
-    height: 16px
-    position: absolute
-    top: 5px
-    right: 100%
+  &__wrap
     display: inline-block
-    margin-right: 16px
-  &:hover
-    color: #00bcd9
+    position: relative
+  &__text
+      display: inline-block
+      position: absolute
+      top: 30px
+      left: 0px
+      color:#FFF
+      font-size: 20px
+      text-transform: uppercase
+      background-color:rgba(0,0,0,.4);
+      padding: 10px 30px;
+  &__seemore
+    font-size: 18px
+    text-transform: uppercase
+    margin-top: 50px
+    position: relative
+    text-decoration: none
+    color: #000
+    margin-bottom: 66px
+    transition: .5s
+    &:before
+      content: ""
+      background-image url('/img/circle.png')
+      width: 16px
+      height: 16px
+      position: absolute
+      top: 5px
+      right: 100%
+      display: inline-block
+      margin-right: 16px
+    &:hover
+      color: #00bcd9
 .training
   margin-top: 70px
   &__title
@@ -124,6 +135,7 @@ body
     font-size: 40px
     font-weight: 600
     text-align: center
+    text-transform: uppercase
   &__discription
     margin: 20px 155px 0
     text-align: center
@@ -132,53 +144,21 @@ body
   &__menu
     display: flex
     align-items: center
-    justify-content: center
+    justify-content: space-between
     margin-top: 46px
-  &__item
-    background-color: #000000
-    width: 240px
-    height: 65px
-    margin: 8px
-    display: flex
+  &__button
+    display: inline-flex
     align-items: center
-    justify-content: space-around
-    position: relative
+    background-color: #000
+    padding: 12px 0
     transition: .5s
+    text-decoration: none
     &:hover
       background-color: #00bcd9
-    &:before
-      content: ""
-      background-image url('/img/run.png')
-      background-repeat: no-repeat
-      width: 48px
-      height: 34px
-      position: absolute
-      top: 24%
-      left: 16px
-      display: inline-block
-      border-right: 1px solid #fff
-      padding-right: 16px
-    &_a
-      background-color: #000000
-      &:before
-        background-image url('/img/trail.png')
-    &_b
-      background-color: #000000
-      &:before
-        background-image url('/img/swim.png')
-    &_c
-      background-color: #000000
-      &:before
-        background-image url('/img/triathlon.png')
-    &_d
-      background-color: #000000
-      &:before
-        background-image url('/img/aquatlon.png')
-  &__link
-    text-decoration: none
-    color: #ffffff
+  &__image
+    border-right: 1px solid #fff
+    padding: 0 12px
+  &__text
+    color: #fff
+    padding: 0 24px
     text-transform: uppercase
-    font-size: 20px
-    padding-left: 65px
-
-
