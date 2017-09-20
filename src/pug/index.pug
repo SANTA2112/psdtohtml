@@ -8,71 +8,80 @@ html(lang="en")
     link(rel="stylesheet", href="css/style.css")
   body
     .header
-      .header__wrap
-        a(href='/')
-          img.header__logo(src='/img/logo.png')
-        .header__phone +7 (727) 356-53-86
-        a(href='#').header__recontrain Записаться на тренировку
-      .header__wrap
-        img.header__logo-marathon(src='/img/logo-marathon.png')
-        .header__time
-          .header__time(data-text="Дней") 290
-          .header__time(data-text="Час.") 22
-          .header__time(data-text="Мин.") 22
-          .header__time(data-text="Сек.") 03
+      .wrapper
+        .header__wrap
+          a(href='/')
+            img.header__logo(src='/img/logo.png')
+          .header__phone +7 (727) 356-53-86
+          a(href='#').header__recontrain Записаться на тренировку
+        .header__wrap
+          img.header__logo-marathon(src='/img/logo-marathon.png')
+          .header__time
+            .header__time(data-text="Дней") 290
+            .header__time(data-text="Час.") 22
+            .header__time(data-text="Мин.") 22
+            .header__time(data-text="Сек.") 03
     nav.menu
-      .menu__wrap
-        nav.menu__item
-          a.menu__link(href='#') Программы
-        nav.menu__item
-          a.menu__link(href='#') Календарь
-        nav.menu__item
-          a.menu__link(href='#') Тренеры
-        nav.menu__item
-          a.menu__link(href='#') Мероприятия
-        nav.menu__item
-          img.menu__zipper(src="/img/lightning.png")
-          a.menu__link(href='#') LIfe in space
-        nav.menu__item
-          a.menu__link(href='#') Галерея
-        nav.menu__item
-          a.menu__link(href='#') Сборы
-      .menu__wrap
-        nav.menu__item
-          a(href='#')
-            img.menu__facebook(src='/img/logo-facebook.png')
-        nav.menu__item
-          a(href='#')
-            img.menu__insta(src='/img/logo-insta.png')
-        nav.menu__item
-          a(href='#')
-            img.menu__youtube(src='/img/logo-youtube.png')
-        nav.menu__item
-          a(href='#')
-            img.menu__question(src='/img/logo-question.png')
-        nav.menu__item
-          a(href='#')
-            img.menu__search(src='/img/logo-search.png')
+      .wrapper
+        .menu__wrap
+          nav.menu__item
+            a.menu__link(href='#') Программы
+          nav.menu__item
+            a.menu__link(href='#') Календарь
+          nav.menu__item
+            a.menu__link(href='#') Тренеры
+          nav.menu__item
+            a.menu__link(href='#') Мероприятия
+          nav.menu__item
+            img.menu__zipper(src="/img/lightning.png")
+            a.menu__link(href='#') LIfe in space
+          nav.menu__item
+            a.menu__link(href='#') Галерея
+          nav.menu__item
+            a.menu__link(href='#') Сборы
+        .menu__wrap
+          nav.menu__item
+            a(href='#')
+              img.menu__facebook(src='/img/logo-facebook.png')
+          nav.menu__item
+            a(href='#')
+              img.menu__insta(src='/img/logo-insta.png')
+          nav.menu__item
+            a(href='#')
+              img.menu__youtube(src='/img/logo-youtube.png')
+          nav.menu__item
+            a(href='#')
+              img.menu__question(src='/img/logo-question.png')
+          nav.menu__item
+            a(href='#')
+              img.menu__search(src='/img/logo-search.png')
     .title Let's go to Space
     nav.sport-menu
-      nav.sport-menu__item
-        a.sport-menu__link(href='#') Все виды спорта
-      nav.sport-menu__item
-        a.sport-menu__link(href='#') Бег
-      nav.sport-menu__item
-        a.sport-menu__link(href='#') Плавание
-      nav.sport-menu__item
-        a.sport-menu__link(href='#') Триатлон
-      nav.sport-menu__item
-        a.sport-menu__link(href='#') Трейл
-      nav.sport-menu__item
-        a.sport-menu__link(href='#') Акватлон
+      .wrapper
+        nav.sport-menu__item
+          a.sport-menu__link(href='#') Все виды спорта
+        nav.sport-menu__item
+          a.sport-menu__link(href='#') Бег
+        nav.sport-menu__item
+          a.sport-menu__link(href='#') Плавание
+        nav.sport-menu__item
+          a.sport-menu__link(href='#') Триатлон
+        nav.sport-menu__item
+          a.sport-menu__link(href='#') Трейл
+        nav.sport-menu__item
+          a.sport-menu__link(href='#') Акватлон
     .half-maraphon
-      .half-maraphon__wrap
-        img.half-maraphon__image(src="/img/1.png")
-        img.half-maraphon__image(src="/img/2.png")
-        img.half-maraphon__image(src="/img/3.png")
-        img.half-maraphon__image(src="/img/4.png")
+      .wrapper
+        .half-maraphon__wrap
+          .half-maraphon__image
+            img(src="/img/1.png")
+            .half-maraphon__text Lorem ipsum dolor sit amet.
+          .half-maraphon__image
+            img(src="/img/2.png")
+          .half-maraphon__image
+            img(src="/img/3.png")
+          .half-maraphon__image
+            img(src="/img/4.png")
     .seemore
       img.seemore__img(src="/img/circle.png")
       a(href='#').seemore__title Посмотреть ещё
@@ -81,18 +90,19 @@ html(lang="en")
       .training__title Программы обучения
       .training__discription Наши услуги будут полезны для начинающих и детей, любителей, профессиональный уровень, тренировок и подготовка к стартам, контроль питания и здоровья
       .training__menu
-        a.training__button(href='#')
-          img.training__image(src='/img/run.png')
-          .training__text Бег
-        a.training__button(href='#')
-          img.training__image(src='/img/trail.png')
-          .training__text Трейл
-        a.training__button(href='#')
-          img.training__image(src='/img/swim.png')
-          .training__text Плавание
-        a.training__button(href='#')
-          img.training__image(src='/img/triathlon.png')
-          .training__text Триатлон
-        a.training__button(href='#')
-          img.training__image(src='/img/aquatlon.png')
-          .training__text Акватлон
+        .wrapper
+          a.training__button(href='#')
+            img.training__image(src='/img/run.png')
+            .training__text Бег
+          a.training__button(href='#')
+            img.training__image(src='/img/trail.png')
+            .training__text Трейл
+          a.training__button(href='#')
+            img.training__image(src='/img/swim.png')
+            .training__text Плавание
+          a.training__button(href='#')
+            img.training__image(src='/img/triathlon.png')
+            .training__text Триатлон
+          a.training__button(href='#')
+            img.training__image(src='/img/aquatlon.png')
+            .training__text Акватлон

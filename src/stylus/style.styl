@@ -6,11 +6,13 @@
   outline: 0
 body
   font-family: "Open Sans"
-
+.wrapper
+  max-width: 1264px
+  display: flex
+  justify-content: space-between
+  margin: 0 auto
 .header
   width: 100%
-  display: flex
-  justify-content: space-around
   &__wrap
     display: flex
     justify-content: center
@@ -49,13 +51,9 @@ body
         font-size 10px
 
 .menu
-  display: flex
-  justify-content: space-around
   background-color: #000
-  padding: 0 5px
   &__wrap
     display: flex
-    justify-content: center
   &__item
     display: flex
     align-items: center
@@ -100,7 +98,7 @@ body
 
 .half-maraphon
   display: flex
-  justify-content: space-around
+  justify-content: space-between
   margin-top: 45px
   &__wrap
     display: flex
@@ -108,7 +106,15 @@ body
     flex-wrap: wrap
     align-content: center
   &__image
-    margin: 10px
+    position relative
+    margin 10px
+    width: calc(50% - 20px)
+    & img
+      width 100%
+  &__text
+    position absolute
+    top: 30px
+    left: 30px
 .seemore
   display: flex
   justify-content: center
@@ -135,11 +141,14 @@ body
     font-weight: 600
     text-align: center
     text-transform: uppercase
+    margin-bottom: 30px
   &__discription
-    margin: 20px 155px 0
+    margin: 0 auto
     text-align: center
     color: #000000
     font-size: 18px
+    max-width: 1264px
+    display: flex
   &__menu
     display: flex
     align-items: center
