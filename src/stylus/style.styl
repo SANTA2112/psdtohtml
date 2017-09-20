@@ -10,50 +10,58 @@ body
 .header
   width: 100%
   display: flex
-  align-items: center
-  justify-content: space-between
+  justify-content: space-around
+  &__wrap
+    display: flex
+    justify-content: center
+    align-items: center
   &__logo
-    width: 100%
-    padding: 5px
+    margin-right: 45px
   &__phone
-    text-transform: uppercase
-    color: #000
+    margin-right: 45px
     font-size: 20px
+    text-transform: uppercase
   &__recontrain
+    margin-right: 45px
     color: #000
-    font-size: 15px
-    border-bottom: 1px dashed #000
-    transition: .5s
+    border-bottom: 1px dashed #000;
     text-decoration: none
+    transition: .5s
     &:hover
       border-color: transparent
   &__logo-marathon
-    padding-left: 240px
+    margin-right: 45px
   &__time
-    color: #00bcd9
-    font-size: 30px
-    font-weight: 600
-    font-style: italic
-    text-transform: uppercase
-  &__time
-    position: relative
-    display: inline-block
-    margin 0 5px
-    font-size: 30px
-    &:after
-      content: attr(data-text)
-      position: absolute
-      top: 80%
-      right: 0
-      font-size 10px
+      color: #00bcd9
+      font-size: 30px
+      font-weight: 600
+      font-style: italic
+      text-transform: uppercase
+      position: relative
+      display: inline-block
+      margin 0 5px
+      font-size: 30px
+      &:after
+        content: attr(data-text)
+        position: absolute
+        top: 80%
+        right: 0
+        font-size 10px
+
 .menu
   display: flex
-  justify-content: space-between
-  align-items: center
+  justify-content: space-around
   background-color: #000
   padding: 0 5px
+  &__wrap
+    display: flex
+    justify-content: center
   &__item
-      padding: 20px 0
+    display: flex
+    align-items: center
+    margin: 15px
+  &__zipper
+    margin-right: 5px
   &__link
     text-decoration: none
     color: #fff
@@ -61,12 +69,11 @@ body
     transition: .5s
     &:hover
       color: #00bcd9
-  &__facebook
-    margin-left: 180px
   &__question
     padding: 0 15px
     border-right: 1px solid #fff
     border-left: 1px solid #fff
+
 .title
   color: #000
   font-size: 40px
@@ -89,45 +96,38 @@ body
     &:hover
       color: #00bcd9
       border-bottom: 1px solid #00bcd9
+
 .half-maraphon
   display: flex
   justify-content: space-around
-  flex-wrap: wrap
   margin-top: 45px
   &__wrap
-    display: inline-block
-    position: relative
-  &__text
-      display: inline-block
-      position: absolute
-      top: 30px
-      left: 0px
-      color:#FFF
-      font-size: 20px
-      text-transform: uppercase
-      background-color:rgba(0,0,0,.4);
-      padding: 10px 30px;
-  &__seemore
-    font-size: 18px
-    text-transform: uppercase
-    margin-top: 50px
-    position: relative
-    text-decoration: none
-    color: #000
-    margin-bottom: 66px
-    transition: .5s
-    &:before
-      content: ""
-      background-image url('/img/circle.png')
-      width: 16px
-      height: 16px
-      position: absolute
-      top: 5px
-      right: 100%
-      display: inline-block
-      margin-right: 16px
-    &:hover
-      color: #00bcd9
+    display: flex
+    justify-content: center
+    flex-wrap: wrap
+    align-content: center
+  &__image
+    margin: 10px
+.seemore
+  font-size: 18px
+  text-transform: uppercase
+  display: flex
+  justify-content: center
+  align-items: center
+  margin-top: 50px
+  text-decoration: none
+  color: #000
+  font-weight: 600
+  transition: .5s
+  &:before
+    content: ""
+    margin-right: 15px
+    background: url(/img/circle.png)
+    height: 16px
+    width: 16px
+  &:hover
+    color: #00bcd9
+
 .training
   margin-top: 70px
   &__title
