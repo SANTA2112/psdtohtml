@@ -114,7 +114,25 @@ body
   &__text
     position absolute
     top: 30px
-    left: 30px
+    left: 40px
+    font-size: 30px
+    font-weight: 600
+    line-height: 45px
+    text-transform: uppercase
+    color: #000
+    background-color: #fff
+    padding: 0 10px
+  &__text1
+    position absolute
+    top: 84px
+    left: 40px
+    font-size: 30px
+    font-weight: 600
+    line-height: 45px
+    text-transform: uppercase
+    color: #000
+    background-color: #fff
+    padding: 0 10px
 .seemore
   display: flex
   justify-content: center
@@ -159,7 +177,6 @@ body
     align-items: center
     justify-content: center
     background-color: #000
-    padding: 12px 0
     transition: .5s
     text-decoration: none
     width: 240px;
@@ -169,8 +186,25 @@ body
       background-color: #00bcd9
   &__image
     border-right: 1px solid #fff
-    padding: 0 12px
+    padding-right: 12px
   &__text
     color: #fff
     padding: 0 24px
     text-transform: uppercase
+
+.programs
+  display: flex
+  justify-content: space-between
+  &__image-wrap
+    display: flex
+    flex-wrap: wrap
+  &__image
+    position relative
+    margin 10px
+    width: calc(50% - 20px)
+    & img
+      width 100%
+  &__image-absolute
+    position: absolute
+    top: 34px
+    right: 50px
