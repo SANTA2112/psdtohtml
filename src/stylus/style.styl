@@ -337,3 +337,67 @@ body
       letter-spacing: 0.42px
       text-decoration: none
 
+.reviews-header
+  color: #000000
+  text-transform uppercase
+  margin: 70px 0
+  text-align: center
+  font-size: 40px
+  font-weight: 600
+.reviews-container
+  display: flex
+  align-items: center
+  margin 0 0 110px
+.reviews-wrapper
+  max-width: 1264px
+  display: flex
+  margin: 0 auto
+  flex-direction: column
+.reviews
+  width 100%
+  &__left
+    display: flex
+    align-items: center
+  &__text
+    display: flex
+    flex-direction: column
+    margin: 0 70px
+  &__img-header
+    font-size: 23px
+    font-weight: 600
+  &__img-text1
+    font-size: 15px
+    margin: 10px 0 20px
+    font-style: italic
+  &__img-text2
+    margin-bottom: 25px
+  &__right
+    position relative
+    display: flex
+    &:before
+      content: ''
+      background: url(/img/treangl.png) top left
+      width: 37px
+      height: 40px
+    &:after
+      content: ''
+      position absolute
+      bottom: -32px
+      right: 26px
+      background: url(/img/cav.png)
+      width: 73px
+      height: 63px
+    &_clear
+      &:before
+        content: ''
+        background-size: 0
+      &:after
+        content: ''
+        background-size: 0
+  &__img-text3
+    font-size: 15px
+    font-style: italic
+    position absolute
+    top 0
+    left: 60px
+    padding 30px
