@@ -8,8 +8,6 @@ html(lang="en")
     link(rel="stylesheet", href="css/style.css")
     link(rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css")
   body
-    .top
-      i.fa.fa-angle-double-up
     .header
       .wrapper
         .header__wrap
@@ -217,24 +215,38 @@ html(lang="en")
         .footer__discreption-left
           nav.footer__menu
             nav.footer__menu-header МЕНЮ
-            nav.footer__menu-link  Стоимость
-            nav.footer__menu-link  Фото 
-            nav.footer__menu-link Тренеры 
-            nav.footer__menu-link Курсs
-            nav.footer__menu-link  Отзывы
-            nav.footer__menu-link  Блог
-            nav.footer__menu-link  Контакты
+            nav.footer__menu-item
+              a.footer__menu__link(href='#')  Стоимость
+            nav.footer__menu-item
+              a.footer__menu__link(href='#')  Фото 
+            nav.footer__menu-item
+              a.footer__menu__link(href='#') Тренеры 
+            nav.footer__menu-item
+              a.footer__menu__link(href='#') Курсs
+            nav.footer__menu-item
+              a.footer__menu__link(href='#')  Отзывы
+            nav.footer__menu-item
+              a.footer__menu__link(href='#')  Блог
+            nav.footer__menu-item
+              a.footer__menu__link(href='#')  Контакты
           nav.footer__menu
             nav.footer__menu-header МЕНЮ
-            nav.footer__menu-link  Стоимость
-            nav.footer__menu-link  Фото 
-            nav.footer__menu-link Тренеры 
-            nav.footer__menu-link Курсs
-            nav.footer__menu-link  Отзывы
-            nav.footer__menu-link  Блог
-            nav.footer__menu-link  Контакты
+            nav.footer__menu-item
+              a.footer__menu__link(href='#')  Стоимость
+            nav.footer__menu-item
+              a.footer__menu__link(href='#')  Фото 
+            nav.footer__menu-item
+              a.footer__menu__link(href='#') Тренеры 
+            nav.footer__menu-item
+              a.footer__menu__link(href='#') Курсs
+            nav.footer__menu-item
+              a.footer__menu__link(href='#')  Отзывы
+            nav.footer__menu-item
+              a.footer__menu__link(href='#')  Блог
+            nav.footer__menu-item
+              a.footer__menu__link(href='#')  Контакты
           .footer__contacts
-            .footer__contacts-header Контакты
+            .footer__menu-header Контакты
             .footer__contacts-adress  Адрес офиса: Минск, ул. Франциска Скорины дом 14, офис 310 
             .footer__contacts-adress Телефоны: +375298060665  +375296108810
             .footer__contacts-adress  email-info@irun.by
@@ -242,16 +254,18 @@ html(lang="en")
             .footer__contacts-adress  пн.-cб. 8.30 - 17.30
             .footer__contacts-adress перерыв на обед: 12.30-13.15
         .footer__discreption-right
-          img.footer__discreption-img(src='/img/logo-marathon.png')
-          .programs__image-button
-            a.programs__image-link(href="#") Подать заявку ▶
-          .menu__wrap
-            nav.menu__item
-              a(href='#')
-                img.menu__facebook(src='/img/logo-facebook.png')
-            nav.menu__item
-              a(href='#')
-                img.menu__insta(src='/img/logo-insta.png')
-            nav.menu__item
-              a(href='#')
-                img.menu__youtube(src='/img/logo-youtube.png')
+          img(src='img/footer-img-right.jpg')
+          .footer__discreption-absolute
+            img.footer__discreption-img(src='/img/logo-marathon.png')
+            .programs__image-button
+              a.programs__image-link(href="#") Подать заявку ▶
+            .menu__wrap
+              nav.menu__item
+                a(href='#')
+                  img.menu__facebook(src='/img/logo-facebook.png')
+              nav.menu__item
+                a(href='#')
+                  img.menu__insta(src='/img/logo-insta.png')
+              nav.menu__item
+                a(href='#')
+                  img.menu__youtube(src='/img/logo-youtube.png')

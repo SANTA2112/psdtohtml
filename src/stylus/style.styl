@@ -6,26 +6,6 @@
   outline: 0
 body
   font-family: "Open Sans"
-.top
-	position: fixed
-	bottom: 20px
-	right: 20px
-	width: 50px
-	height: 50px
-	border-radius: 100%
-	cursor: pointer
-	background-color: #fff
-	text-align: center
-	opacity: 0.4
-	color: #414e5b
-	transition: .5s
-	z-index: 5
-	.fa
-		font-size: 32px
-		margin-top: 7px
-	&:hover
-		opacity: 1
-		background-color: #00bcd9
 .wrapper
   max-width: 1264px
   display: flex
@@ -403,7 +383,7 @@ body
     padding 30px
 
 .footer
-  background: url(/img/footer-bg.png) top center/contain no-repeat
+  background: url(/img/footer-bg.png) bottom center/contain no-repeat
   height: 872px
   display: flex
   flex-direction: column
@@ -415,11 +395,12 @@ body
     align-items: center
   &__partners-images
     display: flex
-    justify-content: space-between
+    justify-content: center
     align-items: center
   &__partners-logo
     width 200px
     height 50px
+    margin: 10px 50px
   &__discreption
     background: #000000
     opacity: .8
@@ -430,14 +411,34 @@ body
     display: flex
     justify-content: space-around
     padding 0 38px
+  &__menu-header
+    text-transform uppercase
+    margin-bottom: 8px
+  &__menu-item
+    padding: 2px 0
+  &__menu__link
+    text-decoration none
+    color: #ffffff
+    border-bottom: 1px solid transparent
+    transition: .5s
+    &:hover
+      color: #00bcd9
+      border-bottom: 1px solid #00bcd9
   &__discreption-right
-    background: url(/img/footer-img-right.jpg)
-    width: 309px
-    height: 395px
-    padding: 38px
+    position relative
+    & img
+      width 100%
+      opacity: 0.35
+  &__discreption-absolute
+    position: absolute
+    top: 0
+    left: 0
+    padding 30px
   &__menu
     color: #ffffff
     margin-right: 70px
   &__contacts
     color: #ffffff
     margin-right: 70px
+  &__contacts-adress
+    padding: 4px 0
